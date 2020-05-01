@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,300&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* header start */
+
+header {
+  background-color: #1c443b;
+  padding: 3rem;
+  height: 100%;
+}
+
+h1,
+h3 {
+  width: 50%;
+}
+
+header h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.title {
+  padding: 9rem;
+  background-color: #f7eee6;
+  position: relative;
+}
+
+.img {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background: url("../Nursery-Website/images/nagy-arnold-X_IvVDuHvDQ-unsplash.jpg")
+    center/407px;
+  background-repeat: no-repeat;
+
+  /* background: [background-image] [background-position] / [background-size]
+    [background-repeat] [background-attachment] [background-origin]
+    [background-clip] [background-color]; */
+}
+
+.myButton {
+  background-color: #fc5800;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 17px;
+  text-decoration: none;
+}
+.myButton:hover {
+  background-color: #ce0100;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* header end */
+
+/* section-1 start */
+main {
+  font-size: 1rem;
+  width: 85%;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.section-1 ul {
+  display: flex;
+  padding: 4rem;
+  justify-content: space-evenly;
+}
+
+.section-1 ul li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+.section-1 ul li h1 {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.section-1 ul .fas {
+  display: flex;
+  align-self: center;
+  font-size: 3rem;
+  margin-right: 0.5rem;
+  color: #ff9156;
+}
+
+/* section-1 end */
+
+/* collection start */
+
+.collection {
+  margin: 4rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto repeat(3, 300px);
+
+  grid-gap: 1rem;
+}
+
+.collection h1 {
+  font-size: 4rem;
+  grid-column: span 3;
+}
+
+.collection .img-1,
+.collection .img-2,
+.collection .img-3,
+.collection .img-4 {
+  position: relative;
+}
+
+.collection .img-heading {
+  background-color: #f7eee6;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 400;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.collection .img-1 {
+  grid-row: span 2;
+  background: url("../Nursery-Website/images/img-1.jpg") center;
+  background-size: cover;
+}
+
+.collection .img-2 {
+  grid-column: 2 / 4;
+  background: url("../Nursery-Website/images/img-2.jpg") center;
+  background-size: cover;
+}
+
+.collection .img-3 {
+  grid-column: 2 / 4;
+  grid-row: span 2;
+  background: url("../Nursery-Website/images/img-3.jpg") center;
+  background-size: cover;
+}
+
+.collection .img-4 {
+  background: url("../Nursery-Website/images/img-4.jpg") center;
+  background-size: cover;
+}
+
+/* collection end */
+
+/* about start */
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.about .top {
+  padding: 8rem 4rem;
+  background-color: #1c443b;
+}
+
+.about .top h1 {
+  font-size: 2.5rem;
+  width: 100%;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.about .top p {
+  color: white;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.about .abt-img {
+  background: url("../Nursery-Website/images/gabriele-stravinskaite-TaJx0rujtyY-unsplash.jpg")
+    top;
+  background-size: cover;
+}
+
+.about .btm {
+  padding: 2.5rem;
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fdc003;
+}
+
+.btm p {
+  margin: 0 2rem;
+}
+
+.btm .myButton {
+  flex-basis: 25%;
+  text-align: center;
+}
+
+/* about end */
+
+/* indoor collection start */
+.indoor-collection h1 {
+  font-size: 3rem;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.indoor-collection .pot-imgs {
+  height: 300px;
+  max-width: 70%;
+
+  display: flex;
+  margin: 0 auto;
+}
+
+.indoor-collection .pot-imgs .pot-1 {
+  background: url("../Nursery-Website/images/pot1.jpg") center;
+  background-size: cover;
+  width: 100%;
+}
+
+.indoor-collection .pot-imgs .pot-2 {
+  background: url("../Nursery-Website/images/pot2.jpg") right;
+  background-size: cover;
+  width: 100%;
+  margin: 0 2.5rem;
+}
+
+.indoor-collection .pot-imgs .pot-3 {
+  background: url("../Nursery-Website/images/pot3.jpg") center;
+  background-size: cover;
+  width: 100%;
+}
+
+.indoor-collection .pot-imgs .pot-1:hover,
+.indoor-collection .pot-imgs .pot-2:hover,
+.indoor-collection .pot-imgs .pot-3:hover {
+  box-shadow: 0px 16px 27px -7px rgba(0, 0, 0, 0.75);
+  transform: scale(1.1);
+  transition: ease-in 0.3s;
+
+  cursor: pointer;
+}
+/* indoor collection end */
+
+/* user reviews start */
+
+.indoor-collection .usr {
+  padding: 10rem;
+  background-color: #0f7a63;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+}
+
+.indoor-collection .usr span {
+  display: block;
+  margin: 2rem 0 2rem 1rem;
+  font-weight: 400;
+}
+
+.indoor-collection .usr .usr-1,
+.indoor-collection .usr .usr-2,
+.indoor-collection .usr .usr-3 {
+  box-shadow: 0px 16px 27px -7px rgba(0, 0, 0, 0.75);
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.indoor-collection .usr .usr-1,
+.indoor-collection .usr .usr-2,
+.indoor-collection .usr .usr-3 {
+  background-image: none;
+  text-align: center;
+  align-self: center;
+  padding: 2rem;
+  /* max-width: 20%; */
+
+  position: relative;
+}
+
+.usr-reviews .usr .usr-1 span::before,
+.usr-reviews .usr .usr-2 span::before,
+.usr-reviews .usr .usr-3 span::before {
+  content: "";
+  margin: 0.5rem auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.usr-reviews .usr .usr-1 span::before {
+  background-image: url("../Nursery-Website/images/pro1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.usr-reviews .usr .usr-2 span::before {
+  background-image: url("../Nursery-Website/images/pro2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.usr-reviews .usr .usr-3 span::before {
+  background-image: url("../Nursery-Website/images/pro3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* user reviews end */
+
+/* footer start */
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 1rem;
+
+  padding: 5rem;
+}
+
+footer h1 {
+  width: 100%;
+  grid-row: 1/2;
+}
+
+footer input {
+  text-align: center;
+  outline: none;
+
+  border: 2px solid #1c443b;
+}
+
+footer a {
+  grid-column: 2/3;
+}
+/* footer end */
